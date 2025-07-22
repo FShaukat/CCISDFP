@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Intent to Apply | CCISD Grants Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #1a1a1a;
+      background-color: #fff;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      max-width: 1200px;
+      line-height: 1.75;
+      display: flex;
+      gap: 3rem;
+    }
+    main { flex: 3; }
+    aside { flex: 1; font-size: 0.95rem; }
+    h1 {
+      font-size: 2.25rem;
+      color: #002395;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #002395;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 4px solid #ffcc00;
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+    p { margin-bottom: 1rem; }
+    .faq-item { margin-bottom: 1rem; }
+    .faq-question {
+      cursor: pointer;
+      background: #eee;
+      padding: 0.75rem;
+      font-weight: bold;
+    }
+    .faq-answer {
+      display: none;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="section-label">Grants Portal</p>
+    <h1>Intent to Apply</h1>
+
+    <p>
+      If you are interested in collaborating on a grant that is currently open, please complete the form below to notify the Grants Office of your intent. This helps us coordinate district-wide efforts, provide timely support, and ensure all grant applications meet internal and external requirements.
+    </p>
+
+    <iframe width="640px" height="480px" src="https://forms.office.com/r/7fMKu336Nu?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <div class="faq-item">
+      <div class="faq-question">Do I need approval before submitting this form?</div>
+      <div class="faq-answer">No. This form simply alerts the Grants Office of your interest. You’ll receive follow-up regarding approvals or next steps.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">What happens after I submit?</div>
+      <div class="faq-answer">You will be contacted to schedule a brief planning meeting or provided with guidance depending on the nature of the opportunity.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-question">Is this form for TEA grants only?</div>
+      <div class="faq-answer">No — it’s for any competitive or discretionary grant you are interested in pursuing with CCISD support.</div>
+    </div>
+  </main>
+
+  <aside>
+    <div class="location">
+      <strong>Quick Links:</strong>
+      <ul>
+        <li><a href="grants.html">Back to Grants Portal</a></li>
+        <li><a href="upcoming.html">Upcoming Projects</a></li>
+        <li><a href="sustained.html">Sustained Projects</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const answer = q.nextElementSibling;
+        answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+</body>
+</html>

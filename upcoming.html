@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upcoming Grant‑Funded Initiatives | CCISD Grants Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      color: #1a1a1a;
+      background-color: #fff;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      max-width: 1200px;
+      line-height: 1.75;
+      display: flex;
+      gap: 3rem;
+    }
+    main { flex: 3; }
+    aside { flex: 1; font-size: 0.95rem; }
+    h1 {
+      font-size: 2.25rem;
+      color: #002395;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #002395;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 4px solid #ffcc00;
+      display: inline-block;
+      padding-bottom: 0.25rem;
+    }
+    p { margin-bottom: 1rem; }
+    .grant {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 4px;
+      margin-bottom: 2rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: #002395;
+      color: white;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .btn:hover { background: #001a6a; }
+    .faq-item { margin-bottom: 1rem; }
+    .faq-question {
+      cursor: pointer;
+      background: #eee;
+      padding: 0.75rem;
+      font-weight: bold;
+    }
+    .faq-answer {
+      display: none;
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <p class="section-label">Grants Portal</p>
+    <h1>Upcoming Grant‑Funded Initiatives at CCISD</h1>
+
+    <p>Clear Creek ISD is excited to share several initiatives that have been awarded through competitive grants. These programs will launch over the next two school years and support innovation, professional learning, and equitable access across our campuses.</p>
+
+    <div class="grant">
+      <h2>TEA Strategic Staffing Grant</h2>
+      <p><strong>Status:</strong> Funded for 2025–2027</p>
+      <p>This two-year grant supports CCISD in launching paid teacher residencies through partnerships with educator preparation programs, aimed at building long-term teacher pipelines in high-need areas.</p>
+      <a class="btn" href="https://tea.texas.gov/finance-and-grants/grants/grants-administration/grants-awarded/2025-2027-texas-strategic-staffing-grant-for-paid-sustainable-teacher-residency-program" target="_blank">Learn More at TEA »</a>
+    </div>
+
+    <div class="grant">
+      <h2>Interactive Online Learning Grant (Newsela)</h2>
+      <p><strong>Status:</strong> Funded for 2025–2027 (Cycle 2)</p>
+      <p>This grant enables CCISD to implement Newsela’s TEKS-aligned interactive learning platform in grades 7–8 social studies—complete with bilingual resources, embedded media, and professional development support.</p>
+      <a class="btn" href="https://tea.texas.gov/finance-and-grants/grants/grants-administration/grants-awarded/2025-2027-interactive-online-learning-grant-cycle-2" target="_blank">View Cycle 2 Grant Details »</a>
+    </div>
+
+    <div class="grant">
+      <h2>Empowering ECSE Educators Grant (Region 10 ESC)</h2>
+      <p><strong>Status:</strong> Participation confirmed for 2024–2025</p>
+      <p>Through this grant, CCISD’s early childhood educators will receive training and certification in Conscious Discipline and inclusive ECSE practices, enhancing classroom support for our youngest learners.</p>
+      <a class="btn" href="https://www.region10.org/o/r10esc/page/empowering-ecse-educators-to-improve-student-outcomes-grant" target="_blank">Visit Region 10 ESC Program Page »</a>
+    </div>
+
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <div class="faq-item">
+      <div class="faq-question">Can individual teachers apply for these grants?</div>
+      <div class="faq-answer">No. These grants were submitted and awarded to CCISD. Participation is coordinated by your campus or department.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How will I know if my campus is involved?</div>
+      <div class="faq-answer">Your campus administration will share details about participation, training, and roll-out timelines.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Can I propose a different grant initiative?</div>
+      <div class="faq-answer">Absolutely! Please visit the “Submit a Grant Wishlist” or “Request Grant Support” sections of the Grants Portal to share your ideas or ask for help.</div>
+    </div>
+  </main>
+
+  <aside>
+    <div class="location">
+      <strong>Quick Links:</strong>
+      <ul>
+        <li><a href="grants.html">Back to Grants Portal</a></li>
+        <li><a href="ongoing.html">Ongoing Projects</a></li>
+        <li><a href="sustained.html">Sustained Projects</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        const ans = q.nextElementSibling;
+        ans.style.display = ans.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+</body>
+</html>
