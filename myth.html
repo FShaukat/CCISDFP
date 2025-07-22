@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Grant Myths | CCISD Grants Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family:'Montserrat',sans-serif; color:#1a1a1a; background:#fff; margin:2rem auto;
+           padding:0 1rem; max-width:1200px; line-height:1.75; display:flex; gap:3rem; }
+    main { flex:3; }
+    aside { flex:1; font-size:0.95rem; }
+    h1 { font-size:2.25rem; color:#002395; font-weight:800; margin-bottom:1rem; }
+    h2 { font-size:1.5rem; color:#002395; font-weight:700; margin-top:2rem;
+         border-bottom:4px solid #ffcc00; padding-bottom:0.25rem; display:inline-block; }
+    .section-label { font-size:0.85rem; font-weight:700; color:#002395; text-transform:uppercase; margin-bottom:0.5rem; }
+    .toggle { border:1px solid #ccc; border-radius:4px; margin-bottom:1rem; }
+    .toggle-header { background:#f7f7f7; padding:0.75rem; cursor:pointer; font-weight:600; position:relative;}
+    .toggle-header::after { content:'+'; position:absolute; right:1rem; }
+    .toggle-header.expanded::after { content:'−'; }
+    .toggle-content { display:none; padding:1rem; background:#fff; }
+    a { color:#002395; text-decoration:none; font-weight:600; }
+    a:hover { text-decoration:underline; }
+    blockquote { margin:1rem 0; padding-left:1rem; border-left:4px solid #002395; font-style:italic; color:#333; }
+  </style>
+</head>
+<body>
+
+<main>
+  <p class="section-label">Grants Portal</p>
+  <h1>Grant Myths</h1>
+
+  <p>Thinking about applying for a grant but not sure what’s true? Let’s clear the air! Below we debunk some of the most common myths that discourage educators and staff from applying — and show you how CCISD is here to help.</p>
+
+  <blockquote>
+    Anyone at CCISD can submit a strong grant proposal — with support from the Grants Office every step of the way.
+  </blockquote>
+
+  <div class="toggle">
+    <div class="toggle-header">Myth 1: “Grants are only for big, district-wide projects.”</div>
+    <div class="toggle-content">
+      <p>Many grants are designed for classrooms, grade levels, or individual teacher initiatives. Even small ideas can be “projectified” into strong proposals — like resources for a science lab, supplies for reading centers, or enrichment activities.</p>
+    </div>
+  </div>
+
+  <div class="toggle">
+    <div class="toggle-header">Myth 2: “I need lots of grant-writing experience to apply.”</div>
+    <div class="toggle-content">
+      <p>You don’t need to be an expert! The Grants Office can guide you through every step: from intent to apply, project design, budgeting, writing, and submission. We also have templates and tips to help you get started.</p>
+    </div>
+  </div>
+
+  <div class="toggle">
+    <div class="toggle-header">Myth 3: “Grant applications take too much time.”</div>
+    <div class="toggle-content">
+      <p>Some grants are complex, but many are short applications tailored for classroom projects or programs. With good planning and the Grant Toolkit, most proposals can be completed efficiently — especially with help from the Grants Office.</p>
+    </div>
+  </div>
+
+  <div class="toggle">
+    <div class="toggle-header">Myth 4: “You have to match funds to apply for a grant.”</div>
+    <div class="toggle-content">
+      <p>Not all grants require matching funds. In fact, many grants for classrooms, enrichment, or educator development have no match requirement. When a match is required, the Grants Office will help you understand options and approvals.</p>
+    </div>
+  </div>
+
+  <div class="toggle">
+    <div class="toggle-header">Myth 5: “Grants are only for new, innovative ideas.”</div>
+    <div class="toggle-content">
+      <p>While some grants reward innovation, many fund expansions or improvements of what you’re already doing — like extending a successful after-school program or adding materials to strengthen an existing unit.</p>
+    </div>
+  </div>
+
+  <div class="toggle">
+    <div class="toggle-header">Myth 6: “You can’t ask for things like books or supplies.”</div>
+    <div class="toggle-content">
+      <p>Actually, many grants fund tangible classroom resources, as long as you connect them to a defined project and clear outcomes. For example: “Literacy kits to support struggling readers” or “STEM materials to enhance inquiry labs.”</p>
+    </div>
+  </div>
+
+  <div class="toggle">
+    <div class="toggle-header">Myth 7: “If I submit an application, I’m on my own.”</div>
+    <div class="toggle-content">
+      <p>At CCISD, you’re never on your own. We have a Grants Manager dedicated to helping with every phase of the process — and who can even manage the writing, approvals, and submission with you.</p>
+    </div>
+  </div>
+
+  <div class="toggle">
+    <div class="toggle-header">Myth 8: “If I don’t win the first time, I shouldn’t bother.”</div>
+    <div class="toggle-content">
+      <p>Not true! Many successful applicants didn’t get funded their first try. Every proposal is a learning opportunity, and often funders provide feedback so you can strengthen your next application.</p>
+    </div>
+  </div>
+
+  <blockquote>
+    Still unsure? Contact the CCISD Grants Office for friendly guidance — we’re here to help you succeed.
+  </blockquote>
+
+  <h2>Contact the Grants Office</h2>
+  <p><strong>Dr. Faryal Shaukat</strong><br>
+  Grants Manager<br>
+  <a href="mailto:fshaukat@ccisd.net">fshaukat@ccisd.net</a></p>
+</main>
+
+<aside>
+  <div class="section-label">Quick Links</div>
+  <ul>
+    <li><a href="grants.html">Grants Portal</a></li>
+    <li><a href="ita.html">Intent to Apply</a></li>
+    <li><a href="tips.html">Tips for Writing Grants</a></li>
+    <li><a href="toolkit.html">Grant Toolkit</a></li>
+    <li><a href="glossary.html">Grant Glossary</a></li>
+  </ul>
+</aside>
+
+<script>
+  document.querySelectorAll('.toggle-header').forEach(header => {
+    header.addEventListener('click', () => {
+      header.classList.toggle('expanded');
+      const content = header.nextElementSibling;
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</body>
+</html>
